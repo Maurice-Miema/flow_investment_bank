@@ -17,6 +17,7 @@ function Navbar(){
                     <a href="#" className="p-2 rounded-md hover:bg-red-500">Accueil</a>
                     <a href="#apropos" className="p-2 rounded-md hover:bg-red-500">À propos</a>
                     <a href="#service" className="p-2 rounded-md hover:bg-red-500">Services</a>
+                    <a href="#blog" className="p-2 rounded-md hover:bg-red-500">Blogs</a>
                     <a href="#equipe" className="p-2 rounded-md hover:bg-red-500">Equipe</a>
                     <a href="#contact" className="p-2 rounded-md hover:bg-red-500">Contact</a>
                 </nav>
@@ -62,6 +63,9 @@ function Navbar(){
                             </div>
                             <div className='py-4 text-2xl flex justify-center'>
                                 <a href="#service" className="w-ful rounded-md hover:bg-red-600">Services</a>
+                            </div>
+                            <div className='py-4 text-2xl flex justify-center'>
+                                <a href="#blog" className="w-ful rounded-md hover:bg-red-600">Blogs</a>
                             </div>
                             <div className='py-4 text-2xl flex justify-center'>
                                 <a href="#equipe" className="w-ful rounded-md hover:bg-red-600">Equipe</a>
