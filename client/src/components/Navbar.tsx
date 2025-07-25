@@ -7,7 +7,7 @@ function Navbar(){
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <header className="flex justify-between items-center px-4 py-3 bg-white/20 rounded-xl backdrop-blur-md text-white">
+        <header className="flex justify-between items-center p-2 bg-white/20 rounded-xl backdrop-blur-md text-white">
             <div>
                 <h1 className="lg:text-3xl font-bold sm:text-3xl"> <strong className='text-red-500'> Flow </strong> Investment Bank</h1>
             </div>

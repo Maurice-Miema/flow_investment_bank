@@ -11,7 +11,7 @@ function Apropos() {
             className='h-auto lg:px-20 md:px-5'
         >
             <div className='pt-10'>
-                <h1 className='text-3xl flex justify-center pb-7'>Apropos de Nous</h1>
+                <h1 className='text-3xl flex justify-center pb-7'>A propos de nous</h1>
                 <p className="text-gray-700 text-xl text-center lg:px-36 px-4">
                     Nous croyons que l’avenir économique de l’Afrique passe par ses entrepreneurs.
                     FLOW Investment Bank agit comme un levier de transformation, en connectant les PME
@@ -36,7 +36,7 @@ function Apropos() {
             </div>
 
             {/* valeur */}
-            <div className='bg-gray-50 p-4 rounded-xl h-auto mt-4'>
+            <div className=' p-4 rounded-xl h-auto mt-4'>
                 <div className='py-4'>
                     <h1 className='lg:text-2xl text-3xl'>Nos Valeurs</h1>
                 </div>

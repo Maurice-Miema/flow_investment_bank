@@ -21,7 +21,7 @@ function Service() {
                         <img 
                             src="../../images/services.jpeg"  
                             alt="Services Flow"
-                            className="object-cover bg-center bg-no-repeat h-full w-full"
+                            className="object-cover bg-center bg-no-repeat h-full w-full "
                         />
                     </div>
 
