@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'motion/react'
 import { FaLightbulb, FaBalanceScale, FaMedal, FaRocket } from 'react-icons/fa'
 
 function Service() {
@@ -14,7 +16,13 @@ function Service() {
             </div>
 
             <div className="pt-10 px-6">
-                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                <motion.div 
+                    className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center"
+                    initial={{ opacity: 0, x: -100, y: 30 }}  
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
                     
                     {/* 📸 Image à gauche */}
                     <div className="relative w-full h-[400px] hover:scale-110 transition rounded-lg overflow-hidden shadow-lg">
@@ -25,7 +33,13 @@ function Service() {
                         />
                     </div>
 
-                    <div className="grid sm:grid-cols-2 gap-3">
+                    <motion.div 
+                        className="grid sm:grid-cols-2 gap-3"
+                        initial={{ opacity: 0, x: 100, y: 30 }} 
+                        whileInView={{ opacity: 1, x: 0, y: 0 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                    >
                         <div className="bg-red-400 text-white p-4 rounded-xl shadow-md hover:scale-105 transition">
                             <FaRocket className="text-3xl mb-4" />
                             <h3 className="text-xl font-bold mb-2">Levée de fonds</h3>
@@ -58,8 +72,8 @@ function Service() {
                             Mettez en avant votre projet à travers notre média professionnel.
                             </p>
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     )
