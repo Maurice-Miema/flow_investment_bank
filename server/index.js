@@ -4,6 +4,9 @@ const cors = require('cors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 
+// les routes
+const authroute = require('./routes/Auth.routes');
+
 dotenv.config();
 
 const app = express();
@@ -13,9 +16,7 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-// Routes de test (tu pourras les remplacer plus tard)
-app.get('/', (req, res) => {
-    res.send("Bienvenue sur le back-end de Flow Investment Bank 🚀");
-});
+// Routes
+app.use('/api/auth', authroute);
 
 module.exports = app;
